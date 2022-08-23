@@ -1,5 +1,5 @@
 import numpy as np
-import distance as dt
+import _distance_metrics as dt
 from tslearn.clustering import KShape 
 import hdbscan
 
