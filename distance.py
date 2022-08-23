@@ -1,17 +1,6 @@
 import numpy as np
 from tslearn.metrics import dtw
 
-from tqdm import tqdm
-
-def pairwise_distance(ts_list, metric):
-	pairwise_distance_list = []
-	for i, ts_1 in tqdm(enumerate(ts_list)):
-		for ts_2 in ts_list[i:]:
-			pairwise_distance_list.append(metric(ts_1, ts_2))
-
-	return pairwise_distance_list
-
-
 
 def cosine_similarity_distance(series_1, series_2):
 	## compute cosine similarity between two series
